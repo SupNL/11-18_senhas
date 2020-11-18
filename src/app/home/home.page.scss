@@ -1,27 +1,30 @@
-#container {
-  text-align: center;
+#container{
+    .errored::after {
+        color: var(--ion-color-danger);
+        margin-left: 16px;
+        content: "Obrigatório"
+    }
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
+    ion-list ion-item ion-label:hover {
+        cursor: pointer;
+        color : var(--ion-color-dark-shade);
+    }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+    ion-list ion-item ion-label:active {
+        cursor: pointer;
+        color : var(--ion-color-dark-tint);
+    }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+    ion-list ion-item span.remove {
+        color: var(--ion-color-danger);
+    }
 
-  color: #8c8c8c;
+    ion-list ion-item span.remove:hover {
+        cursor: pointer;
+        color : var(--ion-color-danger-shade);
+    }
 
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+    ion-list ion-item span.remove:active {
+        color : var(--ion-color-danger-tint);
+    }
 }
